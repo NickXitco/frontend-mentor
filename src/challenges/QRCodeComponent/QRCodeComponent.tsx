@@ -1,9 +1,12 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import styles from './QRCodeComponent.module.scss'
 import qrCode from './qr-code-component-main/images/image-qr-code.png'
 export interface QRCodeComponentProps {}
 
 export const QRCodeComponent: FC<QRCodeComponentProps> = () => {
+	useEffect(() => {
+		document.title = 'Frontend Mentor | QR code component'
+	})
 	return (
 		<div className={styles.outer}>
 			<div className={styles.container}>

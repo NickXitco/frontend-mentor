@@ -16,7 +16,7 @@ export interface CardProps {
 
 export const Card: FC<CardProps> = (props) => {
 	return (
-		<Link to={`/challenges/${props.id}`} style={{ textDecoration: 'none' }}>
+		<Link to={`/${props.id}`} style={{ textDecoration: 'none' }}>
 			<div key={props.id} className={styles.card}>
 				<div className={styles.img_container}>
 					<img src={props.img} className={styles.img} alt={props.title} />

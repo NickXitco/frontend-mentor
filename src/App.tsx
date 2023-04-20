@@ -7,7 +7,7 @@ export const App = () => (
 	<BrowserRouter>
 		<Routes>
 			<Route path="/" element={<CardList />} />
-			<Route path="/challenges/:cardId" element={<CardPage />} />
+			<Route path="/:cardId" element={<CardPage />} />
 		</Routes>
 	</BrowserRouter>
 )
