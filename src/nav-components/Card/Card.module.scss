@@ -1,0 +1,56 @@
+.card {
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 8px;
+    overflow: hidden;
+
+    transition: all 0.25s ease;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 8px 8px 16px;
+    }
+
+    background: white;
+
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: center;
+}
+
+.img_container {
+    margin: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        box-shadow: inset 0 0  10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.img {
+        width: 100%;
+        object-fit: cover;
+}
+
+.icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 100%;
+}
+
+.content {
+    padding: 0 2rem;
+    color: black;
+
+    p {
+        opacity: 0.6;
+        max-width: 30ch;
+    }
+}

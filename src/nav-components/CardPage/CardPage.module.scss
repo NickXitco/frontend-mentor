@@ -1,0 +1,40 @@
+.tooltip {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    border-radius: 1rem;
+    background: white;
+    padding: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 8px;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 8px 8px 16px;
+    }
+
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 8px;
+}
+
+
+.text {
+    strong {
+        margin: 0;
+    }
+
+    p {
+        margin: 0
+    }
+}
