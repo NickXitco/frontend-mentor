@@ -22,7 +22,7 @@ $shadow-color: rgba(0, 0, 0, 0.25);
     justify-content: center;
     align-items: center;
 
-    max-width: 22rem;
+    max-width: 20rem;
 
     box-shadow: $shadow-color 0.5rem 0.5rem 1rem;
 }
@@ -31,7 +31,13 @@ $shadow-color: rgba(0, 0, 0, 0.25);
     padding: 1rem;
     text-align: center;
 
+    h1 {
+        font-size: 1.25rem;
+        letter-spacing: 0.025ch;
+    }
+
     p {
+        font-size: 1rem;
         color:$p-color;
     }
 }
@@ -53,7 +59,7 @@ $shadow-color: rgba(0, 0, 0, 0.25);
     }
 
     img {
+        display: block;
         width: 100%;
     }
-
 }
